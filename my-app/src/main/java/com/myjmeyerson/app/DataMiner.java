@@ -20,13 +20,13 @@ public class DataMiner {
     private File file;
     private PrintWriter printWriter;
 
-    public DataMiner(String target, int interval) {
+    public DataMiner(String subject, int interval) {
 
-        String accessToken = "CAACEdEose0cBAKogIJqBb87DLAyn4ywvnTMxdOp4yZCZCzDuVYYVnKbI1nyy2ZArSJ8S2ffTC3psM7QCg6qVkfZAHH6Eur39ZAOfJGegICZCYVRQAS8sJTF2cmqt0Rh8t2RTEN18pEKZCsITgybjODJJSc2ZBDQzBWQ8qg4vev90LPY1zkBgPFdm4J4mAdW5vR3LBiT45rZCQXg7PcFEQFwWqhPeW4iC76jEZD";
+        String accessToken = "CAALlmZAQoBx8BAGdlgCwgTSThHLAKbxQUBQ3EDmastxIYQ9iQucnOLNq6caUd2AnqUZBMaZCr7eH4ZBh9nDI81jZCgX9NgnDhUr0zLgYnt3c77dMTY7WOnjrZBZBMscnhLiKKmKMoDgLtDzDFSJSZAQqw1RSvwQg962qGXNUmKHe0qcI9rW6QPZBPZCjEmzKz5VVypDld29cYq4lCx6PSD2Xxp";
         FacebookClient facebookClient = new DefaultFacebookClient(accessToken);
-        Page page = facebookClient.fetchObject(target, Page.class);
+        Page page = facebookClient.fetchObject(subject, Page.class);
 
-        file = new File(outputPath + target);
+        file = new File(outputPath + subject);
         try {
             file.createNewFile();
             printWriter = new PrintWriter(file);

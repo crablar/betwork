@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.js" type="text/javascript"></script>
+<head>
+  <title>Anypost</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="user-widget">
+  <% if current_user %>
+    Welcome <strong><%= current_user.name %></strong>!
+    <%= current_user.oauth_token %>
+    <%= image_tag(current_user.profile_image_url)%>
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  <% end %>
+</div>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+<script type="text/javascript" src="/app/assets/javascripts/samplechart.js"></script>
+<script type="text/javascript">
+	// Get the context of the canvas element we want to select
+	var ctx = document.getElementById("myChart").getContext("2d");
+	var myNewChart = new Chart(ctx).Line(data);
+	console.log(myNewChart);
+</script>
+		
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+<%= yield %>
+
+</body>
+</html>
