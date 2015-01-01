@@ -15,6 +15,7 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({

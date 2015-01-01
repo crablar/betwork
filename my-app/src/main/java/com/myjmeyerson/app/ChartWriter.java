@@ -4,31 +4,32 @@ import java.io.*;
 import java.util.Scanner;
 
 /**
- * Created by jeffreymeyerson on 12/31/14.
+ * ChartWriter writes a ChartSubject into a chart.
  */
 public class ChartWriter {
 
     private static final String sourcePath = "output/";
     private static final String destinationPath = "../rails_app/app/assets/javascripts/samplechart.js";
 
-    public ChartWriter(String subject) throws FileNotFoundException {
+    public ChartWriter(String name) throws IOException {
+
+        ChartSubject chartSubject = new ChartSubject(name);
 
         BufferedReader reader = null;
         BufferedWriter writer = null;
         String tempFileName = destinationPath.replace("samplechart.js", "samplechart_tmp.js");
-
-        File f = new File(destinationPath);
-        File f2 = new File(tempFileName);
-        System.out.println(f.canRead());
-        System.out.println(f2.canRead());
 
         try {
             reader = new BufferedReader(new FileReader(destinationPath));
             writer = new BufferedWriter(new FileWriter(tempFileName));
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.contains("<Y-AXIS VALUES>")) {
-                    line = line.replace("<Y-AXIS VALUES>", "fub");
+                System.out.println(line);
+                if (line.contains("categories:")) {
+                    line = "\t\t\tcategories: [" + chartSubject.getXValues() + "],";
+                }
+                else if (line.contains("data:")) {
+                    line = "\t\t\tdata: [" + chartSubject.getYValues() + "]";
                 }
                 writer.write(line + "\n");
             }
@@ -38,8 +39,9 @@ public class ChartWriter {
 
         File oldFile = new File(destinationPath);
         oldFile.delete();
-
+        writer.close();
         File newFile = new File(tempFileName);
+        newFile.createNewFile();
         newFile.renameTo(oldFile);
 
     }
