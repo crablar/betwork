@@ -1,11 +1,9 @@
 package com.myjmeyerson.app;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A model to build charts out of. Reads a time series written by DataMiner.
@@ -13,16 +11,22 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class ChartSubject {
 
-    private String name;
+    public enum ValueType {
+        FB_LIKES, TWTR_RETWEETS
+    }
+
+    private String subjectName;
+    private ValueType valueType;
     private String xAxisType;
     private String yAxisType;
     private String xValues;
     private String yValues;
     private Map<String, String> yToXAxisMap;
 
-    public ChartSubject(String name) {
-        this.name = name;
+    public ChartSubject(String name, ValueType ValueType) {
+        this.subjectName = name;
         this.yToXAxisMap = new LinkedHashMap<String, String>();
+        this.valueType = ValueType;
 
         try{
             BufferedReader br = new BufferedReader(new FileReader("output/" + name));
@@ -54,6 +58,14 @@ public class ChartSubject {
             buildValueStrings();
         }
         return yValues;
+    }
+
+    public String getSubjectName(){
+        return subjectName;
+    }
+
+    public ValueType getValueType() {
+        return valueType;
     }
 
     public void buildValueStrings(){
