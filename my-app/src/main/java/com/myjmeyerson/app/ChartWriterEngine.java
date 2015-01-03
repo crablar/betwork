@@ -5,12 +5,15 @@ package com.myjmeyerson.app;
  */
 public class ChartWriterEngine {
 
-    public ChartWriterEngine(ChartSubject[] chartSubjects) {
-        ChartWriter[] chartWriters = new ChartWriter[chartSubjects.length];
-    }
+    private ChartWriter[] chartWriters;
+    private MySQLAccess mySQLAccess;
 
-    public void start() {
-
+    public ChartWriterEngine(ChartSubject[] chartSubjects) throws Exception {
+        mySQLAccess = new MySQLAccess();
+        chartWriters = new ChartWriter[chartSubjects.length];
+        for(int i = 0; i < chartSubjects.length; i++){
+            chartWriters[i] = new ChartWriter(chartSubjects[i]);
+        }
     }
 
 }

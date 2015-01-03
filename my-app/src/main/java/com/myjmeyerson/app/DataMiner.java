@@ -33,7 +33,7 @@ public class DataMiner {
 
     public void update() throws SQLException {
         Page page = facebookClient.fetchObject(subjectName, Page.class);
-        Event event = new Event(subjectName, new Date(), page.getLikes(), valueType);
+        Event event = new Event(subjectName, System.currentTimeMillis(), page.getLikes(), valueType);
         mySQLAccess.writeEvent(event);
     }
 }

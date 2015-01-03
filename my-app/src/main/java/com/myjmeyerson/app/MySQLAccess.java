@@ -56,7 +56,7 @@ public class MySQLAccess {
         List<Event> events = new ArrayList<Event>();
         while(resultSet.next()){
             String subjectName = resultSet.getString("SUBJECT_NAME");
-            Date timestamp = resultSet.getDate("TIMESTAMP");
+            long timestamp = resultSet.getLong("TIMESTAMP");
             long value = resultSet.getInt("VALUE");
             String vType = resultSet.getString("VALUE_TYPE");
             events.add(new Event(subjectName, timestamp, value, ChartSubject.ValueType.valueOf(vType)));
@@ -69,8 +69,9 @@ public class MySQLAccess {
                 "(SUBJECT_NAME, VALUE_TYPE, VALUE, TIMESTAMP) values (?,?,?,?)");
         preparedStatement.setString(1, event.getSubjectName());
         preparedStatement.setString(2, event.getValueType().toString());
-        preparedStatement.setInt(3, event.getValue());
-        preparedStatement.setDate(4, new Date(event.getTimestamp().getTime()));
+        preparedStatement.setLong(3, event.getValue());
+        preparedStatement.setLong(4, event.getTimestamp());
+        preparedStatement.executeUpdate();
     }
 
 }

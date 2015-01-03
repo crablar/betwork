@@ -1,5 +1,7 @@
 package com.myjmeyerson.app;
 
+import java.sql.SQLException;
+
 /**
  * Created by jmeyerson on 01/01/15.
  */
@@ -14,7 +16,7 @@ public class DataMinerEngine {
         }
     }
 
-    public void updateChartSubjects() {
+    public void updateChartSubjects() throws SQLException {
         for(DataMiner dataMiner : dataMiners){
             dataMiner.update();
         }

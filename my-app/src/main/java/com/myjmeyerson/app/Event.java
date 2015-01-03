@@ -8,9 +8,9 @@ public class Event {
     private String subjectName;
     private ChartSubject.ValueType valueType;
     private long value;
-    private Date timestamp;
+    private long timestamp;
 
-    public Event(String subjectName, Date timestamp, Long value, ChartSubject.ValueType valueType) {
+    public Event(String subjectName, long timestamp, Long value, ChartSubject.ValueType valueType) {
         this.subjectName = subjectName;
         this.timestamp = timestamp;
         this.value = value;
@@ -25,7 +25,7 @@ public class Event {
         return value;
     }
 
-    public Date getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 
