@@ -9,7 +9,7 @@ public class App
         ChartSubject[] chartSubjects = initializeChartSubjects();
 
         DataMinerEngine dataMinerEngine = new DataMinerEngine(chartSubjects);
-        chartSubjects = dataMinerEngine.updateChartSubjects();
+        dataMinerEngine.updateChartSubjects();
         ChartWriterEngine chartWriterEngine = new ChartWriterEngine(chartSubjects);
         chartWriterEngine.start();
 

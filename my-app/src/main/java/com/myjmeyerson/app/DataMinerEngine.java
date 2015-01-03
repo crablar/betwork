@@ -7,7 +7,7 @@ public class DataMinerEngine {
 
     private DataMiner[] dataMiners;
 
-    public DataMinerEngine(ChartSubject[] chartSubjects){
+    public DataMinerEngine(ChartSubject[] chartSubjects) throws Exception {
         dataMiners = new DataMiner[chartSubjects.length];
         for(int i = 0; i < chartSubjects.length; i++){
             dataMiners[i] = new DataMiner(chartSubjects[i]);
@@ -15,7 +15,7 @@ public class DataMinerEngine {
     }
 
     public void updateChartSubjects() {
-        for(dataMiner : dataMiners){
+        for(DataMiner dataMiner : dataMiners){
             dataMiner.update();
         }
     }

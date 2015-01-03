@@ -4,6 +4,13 @@ package com.myjmeyerson.app;
  * Created by jmeyerson on 01/01/15.
  */
 public class ChartWriterEngine {
-    ChartWriter[] chartWriters = new ChartWriter[fbPageNames.length];
+
+    public ChartWriterEngine(ChartSubject[] chartSubjects) {
+        ChartWriter[] chartWriters = new ChartWriter[chartSubjects.length];
+    }
+
+    public void start() {
+
+    }
 
 }

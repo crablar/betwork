@@ -1,5 +1,6 @@
 package com.myjmeyerson.app;
 
+import javax.management.ValueExp;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,7 @@ public class MySQLAccess {
         return subjects;
     }
 
-    public List<String> getvalueTypes(String subject) throws SQLException {
+    public List<String> getValueTypes(String subject) throws SQLException {
         preparedStatement = connect.prepareStatement("select SUBJECT_TYPE from betwork.SUBJECT_TO_VALUE_TYPE "
                 + "where SUBJECT_NAME=?");
         preparedStatement.setString(1, subject);
@@ -46,22 +47,30 @@ public class MySQLAccess {
         return valueTypes;
     }
 
-    public List<Event> getEvents(String subject, String valueType) throws SQLException {
+    public List<Event> getEvents(String subject, ChartSubject.ValueType valueType) throws SQLException {
         preparedStatement = connect.prepareStatement("select * from betwork.EVENTS where " +
                 "SUBJECT_NAME=? and VALUE_TYPE=?");
         preparedStatement.setString(1, subject);
-        preparedStatement.setString(2, valueType);
+        preparedStatement.setString(2, valueType.toString());
         resultSet = preparedStatement.executeQuery();
         List<Event> events = new ArrayList<Event>();
         while(resultSet.next()){
             String subjectName = resultSet.getString("SUBJECT_NAME");
             Date timestamp = resultSet.getDate("TIMESTAMP");
-            int value = resultSet.getInt("VALUE");
-            events.add(new Event(subjectName, timestamp, value));
+            long value = resultSet.getInt("VALUE");
+            String vType = resultSet.getString("VALUE_TYPE");
+            events.add(new Event(subjectName, timestamp, value, ChartSubject.ValueType.valueOf(vType)));
         }
         return events;
     }
 
-    public
+    public void writeEvent(Event event) throws SQLException {
+        preparedStatement = connect.prepareStatement("INSERT INTO betwork.EVENTS" +
+                "(SUBJECT_NAME, VALUE_TYPE, VALUE, TIMESTAMP) values (?,?,?,?)");
+        preparedStatement.setString(1, event.getSubjectName());
+        preparedStatement.setString(2, event.getValueType().toString());
+        preparedStatement.setInt(3, event.getValue());
+        preparedStatement.setDate(4, new Date(event.getTimestamp().getTime()));
+    }
 
 }
