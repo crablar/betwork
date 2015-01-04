@@ -1,6 +1,6 @@
 package com.myjmeyerson.app;
 
-import static com.myjmeyerson.app.ChartSubject.ValueType;
+import static com.myjmeyerson.app.ChartSubject.ValueType.*;
 
 public class App 
 {
@@ -16,8 +16,11 @@ public class App
 
     private static ChartSubject[] initializeChartSubjects() {
         return new ChartSubject[]{
-            new ChartSubject("JustinBieber", ValueType.FB_LIKES),
-            new ChartSubject("cocacola", ValueType.FB_LIKES)
+            new ChartSubject("JustinBieber", FB_LIKES),
+            new ChartSubject("cocacola", FB_LIKES),
+            new ChartSubject("rihanna", FB_LIKES),
+            new ChartSubject("istanbul", FB_LIKES),
+            new ChartSubject("hearthstone", FB_LIKES)
         };
     }
 }

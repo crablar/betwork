@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class ChartSubject {
 
-    public enum ValueType {
+    public static enum ValueType {
         FB_LIKES, TWTR_RETWEETS
     }
 

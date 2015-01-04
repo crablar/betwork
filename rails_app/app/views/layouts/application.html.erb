@@ -27,6 +27,16 @@
 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <script src="/app/assets/javascripts/samplechart.js"></script>
 		
+<script type="text/javascript">
+  $.ajax({
+    type: 'GET',
+    dataType: 'json',
+    url: 'http://192.168.1.40:8080/SpringMVC/rest/charts/JustinBieber-FB_LIKES' ,
+    success: function(data){
+      alert(data);
+    }});
+    
+</script>
 <div
   class="fb-like"
   data-share="true"

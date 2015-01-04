@@ -8177,3 +8177,1555 @@ ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/
 
 
 Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-01 19:13:51 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:21:59 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 531ms (Views: 488.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:22:01 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (22.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:06 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:06 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:06 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:06 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:22:06 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:27:15 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:27:37 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:52 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:28:53 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:30:36 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:31:58 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:33:49 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:34:09 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:34:10 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:36:02 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:36:28 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-03 18:37:22 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-04 12:56:10 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 473ms (Views: 423.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-04 12:56:11 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:16 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:16 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:16 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:16 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-04 12:56:16 -0800

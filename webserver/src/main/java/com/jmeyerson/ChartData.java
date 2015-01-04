@@ -41,7 +41,7 @@ public class ChartData {
 		this.timestamps = timestamps;
 	}
 
-	public ChartData(String subjectName, String s, List<Event> events) {
+	public ChartData(String subjectName, ChartSubject.ValueType vType, List<Event> events) {
 		timestamps = new long[events.size()];
 		values = new long[events.size()];
 		for(int i = 0; i < events.size(); i++){
@@ -49,7 +49,7 @@ public class ChartData {
 			values[i] = events.get(i).getValue();
 		}
 		setSubjectName(subjectName);
-		setValueType(valueType);
+		setValueType(vType.toString());
 	} 
 	
 }

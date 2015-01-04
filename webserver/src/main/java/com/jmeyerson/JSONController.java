@@ -15,15 +15,16 @@ public class JSONController {
 
 	@RequestMapping(value = "{name}", method = RequestMethod.GET)
 	public @ResponseBody
-	ChartData getShopInJSON(@PathVariable String name) throws Exception {
+	ChartData getChartInJSON(@PathVariable String name) throws Exception {
 
 		MySQLAccess mySQLAccess = new MySQLAccess();
 		String[] pathArr = name.split("-");
 		String subjectName = pathArr[0];
 		ChartSubject.ValueType valueType = ChartSubject.ValueType.valueOf(pathArr[1]);
+		System.out.println("VALUE TYPE IS " + valueType);
 		List<Event> events = mySQLAccess.getEvents(pathArr[0], valueType);
 
-		ChartData chartData = new ChartData(subjectName, valueType.toString(), events);
+		ChartData chartData = new ChartData(subjectName, valueType, events);
 
 		return chartData;
 
