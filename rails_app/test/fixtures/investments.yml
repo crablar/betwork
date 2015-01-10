@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  investment_id: 
+  purchase_price: 
+  owner: 
+  num_shares: 
+  subject: 
+  subject_value: MyString
+
+two:
+  investment_id: 
+  purchase_price: 
+  owner: 
+  num_shares: 
+  subject: 
+  subject_value: MyString
