@@ -9,8 +9,6 @@
 </head>
 <body>
 
-<script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
 
 <div id="user-widget">
   <% if current_user %>
@@ -30,8 +28,8 @@
     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
     </div>
     <div id="ownership">
-      <% if get_ownership(chart["subjectName"], chart["valueType"]) %>
-        you own stuff
+      <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["values"].last.to_i) %>
+        <%= investments %>
       <% else %>
         no ownership
       <% end %>

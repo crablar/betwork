@@ -15,6 +15,8 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+//= require highcharts
+//= require highcharts/adapters/mootools-adapter
 
 <script>
   window.fbAsyncInit = function() {

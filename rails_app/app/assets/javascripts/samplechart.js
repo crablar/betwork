@@ -6,7 +6,10 @@ $.getJSON("/sample_chart_data.json", function(json) {
         var chart = arr[i];
         console.log(chart.subjectName);
         $(function () {
-            $('#' + chart["subjectName"] + 'Chart').highcharts({
+            new Highcharts.Chart({
+                chart: {
+                    renderTo: chart["subjectName"] + 'Chart'
+                },
                 title: {
                     text: chart.subjectName,
                     x: -20 //center
