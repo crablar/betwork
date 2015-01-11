@@ -14,4 +14,7 @@ class User < ActiveRecord::Base
       end
    end
    
+  def invest(params)
+  end
+
 end

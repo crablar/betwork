@@ -26,10 +26,17 @@
 </div>
 
 <%= get_charts.each do |chart| %>
-  <div>
+  <div id="<%= chart['subjectName'] %>-container">
     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
     </div>
-    <button class="btn btn-bet" data-id="<%= chart['subjectName'] %>">Invest</button>
+    <div id="ownership">
+      <% if get_ownership(chart["subjectName"], chart["valueType"]) %>
+        you own stuff
+      <% else %>
+        no ownership
+      <% end %>
+    </div>
+    <button class="btn btn-bet" data-id="<%= chart['subjectName'] %>" data-value-type="<%= chart['valueType'] %>", data-value= <%= chart['values'].last%>, data-price="1">Invest</button>
   </div>
 <% end %>
 
@@ -42,6 +49,9 @@
             type: 'POST',
             data: {
               subjectName: $(this).data('id'),
+              valueType: $(this).data('value-type'),
+              value: $(this).data('value'),
+              price: $(this).data('price'),
               userId: "<%= current_user.id %>"
             },
             dataType: 'json',

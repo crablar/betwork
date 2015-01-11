@@ -26,5 +26,21 @@ class ApplicationController < ActionController::Base
     data_hash = JSON.parse(file)
   end
 
-  helper_method :current_user, :get_user_city, :get_businesses_in_city, :get_random_pair_of_businesses, :choose_business, :get_charts
+  def get_ownership(subject_name, subject_value)
+    puts "WTF"
+    investments = Investment.where(
+      owner_id: current_user.id,
+      value_type: subject_value,
+      subject: subject_name
+      )
+    puts "PARAMATORS #{investments.first}"
+    if !investments.first
+      return nil
+    else
+      return investments
+    end
+  end
+
+  helper_method :current_user, :get_user_city, :get_businesses_in_city, :get_random_pair_of_businesses, 
+  :choose_business, :get_charts, :get_ownership
 end

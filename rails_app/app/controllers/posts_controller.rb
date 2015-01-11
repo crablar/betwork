@@ -2,10 +2,6 @@ class PostsController < ApplicationController
   before_filter :authenticate, :except => [:index, :show, :invest]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
-  def invest
-    puts "ok WE ARE INVESTING"
-  end
-
   # GET /posts
   # GET /posts.json
   def index
