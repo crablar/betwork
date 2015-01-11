@@ -2,12 +2,11 @@ var arr;
 
 $.getJSON("/sample_chart_data.json", function(json) {
     arr = json;
-    console.log("second" + arr.length);
     for (var i = 0; i < arr.length; i++) {
         var chart = arr[i];
-        console.log(chart);
+        console.log(chart.subjectName);
         $(function () {
-            $('#container' + i).highcharts({
+            $('#' + chart["subjectName"] + 'Chart').highcharts({
                 title: {
                     text: chart.subjectName,
                     x: -20 //center
@@ -30,7 +29,7 @@ $.getJSON("/sample_chart_data.json", function(json) {
                     }]
                 },
                 tooltip: {
-                    valueSuffix: '°C'
+                    valueSuffix: ' likes'
                 },
                 legend: {
                     layout: 'vertical',

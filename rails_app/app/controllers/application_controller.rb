@@ -21,15 +21,10 @@ class ApplicationController < ActionController::Base
     json['hash']['businesses']
   end
   
-  def get_random_pair_of_businesses
-    businesses = get_businesses_in_city
-    random = rand(businesses.length)
-    biz1 = businesses[random]
-    businesses.delete(random)
-    random = rand(businesses.length)
-    biz2 = businesses[random]
-    return biz1, biz2
+  def get_charts
+    file = File.read('/home/jmeyerson/workspace/betwork/rails_app/public/sample_chart_data.json')
+    data_hash = JSON.parse(file)
   end
-  
-  helper_method :current_user, :get_user_city, :get_businesses_in_city, :get_random_pair_of_businesses, :choose_business
+
+  helper_method :current_user, :get_user_city, :get_businesses_in_city, :get_random_pair_of_businesses, :choose_business, :get_charts
 end

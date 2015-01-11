@@ -15,8 +15,9 @@
 <div id="user-widget">
   <% if current_user %>
     Welcome <strong><%= current_user.name %></strong>!
-    Your oauth token is:
-    <%= current_user.oauth_token %>
+  </br>
+    Balance:
+    $<%= current_user.balance %>
     <%= image_tag(current_user.profile_image_url)%>
     <%= link_to "Sign out", signout_path, id: "sign_out" %>
   <% else %>
@@ -24,15 +25,43 @@
   <% end %>
 </div>
 
-<div id="container0" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-<div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-<div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-<div id="container4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<%= get_charts.each do |chart| %>
+  <div>
+    <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    </div>
+    <button class="btn btn-bet" data-id="<%= chart['subjectName'] %>">Invest</button>
+  </div>
+<% end %>
 
+<% if current_user %>
+  <script>
+    $(function() {
+        $('.btn-bet').click(function() {
+          $.ajax({
+            url:  "users",
+            type: 'POST',
+            data: {
+              subjectName: $(this).data('id'),
+              userId: "<%= current_user.id %>"
+            },
+            dataType: 'json',
+            accepts: 'json',
+            success: function(data, status) {
+              console.log('success');
+              console.log(data);
+            },
+            error: function(jqXHR, status, error) {
+              console.log('error');
+              console.log(error);
+            }
+          });
+        });
+      });
+  </script>
+<% end %>
 
 <script src="/app/assets/javascripts/samplechart.js"></script>
-		
+
 
 <%= yield %>
 
