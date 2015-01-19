@@ -4,6 +4,10 @@ $.getJSON("/sample_chart_data.json", function(json) {
     arr = json;
     for (var i = 0; i < arr.length; i++) {
         var chart = arr[i];
+        for(var j = 1; j < chart.values.length; j++){
+            chart.values[j] -= chart.values[j - 1];
+        }
+        chart.values[0] = 0;
         console.log(chart.subjectName);
         $(function () {
             new Highcharts.Chart({

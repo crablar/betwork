@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   end
   
   def get_charts
-    file = File.read('/home/jmeyerson/workspace/betwork/rails_app/public/sample_chart_data.json')
+    file = File.read('/Users/jeffreymeyerson/Documents/workspace/betwork/rails_app/public/sample_chart_data.json')
     data_hash = JSON.parse(file)
   end
 
