@@ -10,7 +10,7 @@ public class App
 
         DataMinerEngine dataMinerEngine = new DataMinerEngine(chartSubjects);
         dataMinerEngine.updateChartSubjects();
-        ChartWriterEngine chartWriterEngine = new ChartWriterEngine(chartSubjects);
+        ChartEngine chartEngine = new ChartEngine(chartSubjects);
 
     }
 

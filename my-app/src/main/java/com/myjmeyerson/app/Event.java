@@ -1,24 +1,26 @@
 package com.myjmeyerson.app;
 
+import java.io.Serializable;
 import java.util.Date;
 /**
  * Created by jmeyerson on 01/01/15.
  */
-public class Event {
-    private String subjectName;
-    private ChartSubject.ValueType valueType;
+public class Event implements Serializable{
+
     private long value;
     private long timestamp;
 
-    public Event(String subjectName, long timestamp, Long value, ChartSubject.ValueType valueType) {
-        this.subjectName = subjectName;
+    public Event(long timestamp, Long value) {
         this.timestamp = timestamp;
         this.value = value;
-        this.valueType = valueType;
     }
 
-    public String getSubjectName(){
-        return subjectName;
+    public void setValue(long value) {
+        this.value = value;
+    }
+
+    public void setTimestamp(long timestamp) {
+        this.timestamp = timestamp;
     }
 
     public long getValue() {
@@ -29,17 +31,10 @@ public class Event {
         return timestamp;
     }
 
-    public ChartSubject.ValueType getValueType(){
-        return valueType;
-    }
-
     @Override
     public String toString() {
-        return "Event{" +
-                "subjectName='" + subjectName + '\'' +
-                ", value=" + value +
+        return "Event{value=" + value +
                 ", timestamp=" + timestamp +
-                ", valueType=" + valueType +
                 '}';
     }
 

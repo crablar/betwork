@@ -59,16 +59,16 @@ public class MySQLAccess {
             long timestamp = resultSet.getLong("TIMESTAMP");
             long value = resultSet.getInt("VALUE");
             String vType = resultSet.getString("VALUE_TYPE");
-            events.add(new Event(subjectName, timestamp, value, ChartSubject.ValueType.valueOf(vType)));
+            events.add(new Event(timestamp, value));
         }
         return events;
     }
 
-    public void writeEvent(Event event) throws SQLException {
+    public void writeEvent(Event event, ChartSubject chartSubject) throws SQLException {
         preparedStatement = connect.prepareStatement("INSERT INTO betwork.EVENTS" +
                 "(SUBJECT_NAME, VALUE_TYPE, VALUE, TIMESTAMP) values (?,?,?,?)");
-        preparedStatement.setString(1, event.getSubjectName());
-        preparedStatement.setString(2, event.getValueType().toString());
+        preparedStatement.setString(1, chartSubject.getSubjectName());
+        preparedStatement.setString(2, chartSubject.getValueType().toString());
         preparedStatement.setLong(3, event.getValue());
         preparedStatement.setLong(4, event.getTimestamp());
         preparedStatement.executeUpdate();

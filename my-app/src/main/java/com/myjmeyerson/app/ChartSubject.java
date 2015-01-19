@@ -2,6 +2,7 @@ package com.myjmeyerson.app;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.Serializable;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -9,7 +10,7 @@ import java.util.Map;
  * A model to build charts out of. Reads a time series written by DataMiner.
  */
 
-public class ChartSubject {
+public class ChartSubject implements Serializable{
 
     public static enum ValueType {
         FB_LIKES, TWTR_RETWEETS
@@ -30,4 +31,13 @@ public class ChartSubject {
     public ValueType getValueType() {
         return valueType;
     }
+
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
+    }
+
+    public void setValueType(ValueType valueType) {
+        this.valueType = valueType;
+    }
+
 }
