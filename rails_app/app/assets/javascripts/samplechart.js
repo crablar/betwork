@@ -1,14 +1,19 @@
 var arr;
 
-$.getJSON("/sample_chart_data.json", function(json) {
+$.getJSON("/charts.json", function(json) {
     arr = json;
+    console.log(arr);
     for (var i = 0; i < arr.length; i++) {
         var chart = arr[i];
-        for(var j = 1; j < chart.values.length; j++){
-            chart.values[j] -= chart.values[j - 1];
+        console.log(chart);
+        var events = chart["events"];
+        console.log(events);
+        for(var j = 1; j < events.length; j++){
+            events[j]["value"] -= events[j - 1]["value"];
         }
-        chart.values[0] = 0;
-        console.log(chart.subjectName);
+        events[0] = 0;
+        chart["events"] = events;
+        console.log(chart);
         $(function () {
             new Highcharts.Chart({
                 chart: {

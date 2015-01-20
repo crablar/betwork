@@ -28,13 +28,13 @@
     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
     </div>
     <div id="ownership">
-      <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["values"].last.to_i) %>
+      <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
         <%= investments %>
       <% else %>
         no ownership
       <% end %>
     </div>
-    <button class="btn btn-bet" data-id="<%= chart['subjectName'] %>" data-value-type="<%= chart['valueType'] %>", data-value= <%= chart['values'].last%>, data-price="1">Invest</button>
+    <button class="btn btn-bet" data-id="<%= chart['subjectName'] %>" data-value-type="<%= chart['valueType'] %>", data-value= <%= chart['events'].last["value"]%>, data-price="1">Invest</button>
   </div>
 <% end %>
 

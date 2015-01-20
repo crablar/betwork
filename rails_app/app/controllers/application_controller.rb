@@ -24,6 +24,10 @@ class ApplicationController < ActionController::Base
   def get_charts
     require 'open-uri'
       data_hash = JSON.load(open("https://s3-us-west-2.amazonaws.com/betwork/charts.json"))
+      File.open("public/charts.json","w") do |f|
+        f.write(data_hash.to_json)
+      end
+      data_hash
   end
 
   def get_ownership(subject_name, value_type, current_value)
