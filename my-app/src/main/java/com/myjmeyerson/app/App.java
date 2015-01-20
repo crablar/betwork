@@ -12,7 +12,7 @@ public class App
         dataMinerEngine.updateChartSubjects();
         ChartEngine chartEngine = new ChartEngine(chartSubjects);
 
-        AWSUploader.upload("charts.json");
+        AWSUploader.upload();
 
     }
 

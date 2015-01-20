@@ -15,15 +15,11 @@ import java.io.IOException;
  */
 public class AWSUploader {
 
-    private static String bucketName     = "*** Provide bucket name ***";
-    private static String keyName        = "*** Provide key ***";
-    private static String uploadFileName = "*** Provide file name ***";
+    private static String bucketName     = "betwork";
+    private static String keyName        = "charts.json";
+    private static String uploadFileName = "charts.json";
 
-    AmazonS3 s3client = new AmazonS3Client(new ProfileCredentialsProvider());
-    s3client.putObject(new PutObjectRequest(bucketName, keyName, file));
-
-
-    public static void main(String[] args) throws IOException {
+    public static void upload() throws IOException {
         AmazonS3 s3client = new AmazonS3Client(new ProfileCredentialsProvider());
         try {
             System.out.println("Uploading a new object to S3 from a file\n");
