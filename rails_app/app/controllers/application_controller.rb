@@ -22,8 +22,8 @@ class ApplicationController < ActionController::Base
   end
   
   def get_charts
-    file = File.read('/Users/jeffreymeyerson/Documents/workspace/betwork/rails_app/public/sample_chart_data.json')
-    data_hash = JSON.parse(file)
+    require 'open-uri'
+      data_hash = JSON.load(open("https://s3-us-west-2.amazonaws.com/betwork/charts.json"))
   end
 
   def get_ownership(subject_name, value_type, current_value)

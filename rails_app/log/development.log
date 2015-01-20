@@ -39974,3 +39974,312 @@ ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-18 14:48:31 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:16:41 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (11.1ms)
+  [1m[36mUser Load (20.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 1428ms
+
+ActionView::Template::Error (No such file or directory - /Users/jeffreymeyerson/Documents/workspace/betwork/rails_app/public/sample_chart_data.json):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:25:in `read'
+  app/controllers/application_controller.rb:25:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:18:26 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined local variable or method `s3' for #<PostsController:0x007ff2548c96c0>):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:26:in `block in get_charts'
+  app/controllers/application_controller.rb:25:in `open'
+  app/controllers/application_controller.rb:25:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (45.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:19:05 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 89ms
+
+ActionView::Template::Error (undefined method `new' for Aws::S3:Module):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:25:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:24:57 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 216ms
+
+ActionView::Template::Error (A JSON text must at least contain two octets!):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:29:in `block in get_charts'
+  app/controllers/application_controller.rb:26:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:25:25 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 150ms
+
+ActionView::Template::Error (A JSON text must at least contain two octets!):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:29:in `block in get_charts'
+  app/controllers/application_controller.rb:26:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:26:10 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 159ms
+
+ActionView::Template::Error (A JSON text must at least contain two octets!):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:30:in `block in get_charts'
+  app/controllers/application_controller.rb:26:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:26:37 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 189ms
+
+ActionView::Template::Error (A JSON text must at least contain two octets!):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:31:in `block in get_charts'
+  app/controllers/application_controller.rb:26:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:26:42 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 157ms
+
+ActionView::Template::Error (A JSON text must at least contain two octets!):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/controllers/application_controller.rb:31:in `block in get_charts'
+  app/controllers/application_controller.rb:26:in `get_charts'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:29:08 -0800
+
+SyntaxError (/home/jmeyerson/workspace/betwork/rails_app/app/controllers/application_controller.rb:54: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:29:28 -0800
+
+SyntaxError (/home/jmeyerson/workspace/betwork/rails_app/app/controllers/application_controller.rb:54: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:30:08 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 196ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:30:17 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 149ms
+
+ActionView::Template::Error (undefined method `last' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["values"].last.to_i) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (48.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-19 20:30:24 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 141ms
+
+ActionView::Template::Error (undefined method `last' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["values"].last.to_i) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__754825282408416378_70339586717620'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.0.0/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
