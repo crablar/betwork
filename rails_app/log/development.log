@@ -48530,3 +48530,2882 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-20 13:29:57
 
 
 Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-20 13:29:57 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:03:42 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (13.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 1655ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:36:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:04:35 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 217ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:36:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:06:41 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 171ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:37:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:06:46 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 144ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:37:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:10:16 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 142ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:41:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:12:29 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:12:32 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:12:49 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 146ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:42:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:13:28 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 141ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:42:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:14:02 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 122ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+    30:     <div id="ownership">
+    31:       <% if investments = get_ownership(chart["subjectName"], chart["valueType"], chart["events"].last["value"]) %>
+    32:         <%= investments %>
+    33:       <% else %>
+    34:         no ownership
+  app/controllers/application_controller.rb:42:in `get_ownership'
+  app/views/layouts/application.html.erb:31:in `block in _app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+  app/views/layouts/application.html.erb:26:in `each'
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:14:39 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    23:   <% end %>
+    24: </div>
+    25: 
+    26: <%= get_charts.each do |chart| %>
+    27:   <div id="<%= chart['subjectName'] %>-container">
+    28:     <div id="<%= chart['subjectName'] %>Chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+    29:     </div>
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__3928353113955147001_70295707208340'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 17.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:00 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:15:01 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (323.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (416.6ms)
+
+
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2015-01-21 08:15:09 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '10101786999655415' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (49.9ms)[0m  UPDATE "users" SET "oauth_token" = ?, "oauth_expires_at" = ?, "profile_image_url" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["oauth_token", "CAALlmZAQoBx8BAMqZCxuUwZBZBozqPmT9hF6J488zftvBGpDiEhkIc1SMQjkGZCtJo5Wpxs8K1KpuTyWIwZCVNZBWFWP9n1uVY0QsVG1J7oRc1f0ZAk0fNGoW8fiNdtomWcAtTZA8ZAXMwl2Bo312Lygw12Svl3nGXfbAuLUIDZB7FeNAMIgD2oxX53orwsyi88KztvVDpCZAExZChEakmOSonU10KSLRoERP6yMZD"], ["oauth_expires_at", Wed, 21 Jan 2015 18:00:00 UTC +00:00], ["profile_image_url", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p50x50/10417560_10101797299504435_5492932724802375248_n.jpg?oh=d50b83cc4fe7bf630b110378e850c75e&oe=555BCC47&__gda__=1432343802_c042c0cc886d16bf1ee0bcf303f1535e"], ["updated_at", Wed, 21 Jan 2015 16:15:10 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 194ms (ActiveRecord: 53.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:15:10 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.6ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.4ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 137ms (Views: 132.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:15:10 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (58.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 278ms (Views: 275.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:13 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:15:14 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (57.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:20:35 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 169ms (Views: 165.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:36 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 349ms (Views: 346.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:58 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (33.1ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:20:59 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.6ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 129ms (Views: 126.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.8ms)
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:10 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:21:46 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 242ms (Views: 239.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:46 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:46 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:21:47 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.4ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 215ms (Views: 212.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:22:53 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.8ms)
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:22:54 -0800
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer, "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE INDEX "index_comments_on_post_id" ON "comments" ("post_id")
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "investments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchase_price" integer, "num_shares" integer, "subject" varchar(255), "subject_value" varchar(255), "created_at" datetime, "updated_at" datetime, "owner_id" integer, "value_type" varchar(255)) [0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "created_at" datetime, "updated_at" datetime, "oauth_expires_at" datetime, "profile_image_url" varchar(255), "balance" integer DEFAULT 100) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150111184953')[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141220205252')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141220215339')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141221032502')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141221032717')[0m
+  [1m[35m (2.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20141221033919')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141227212759')[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150110005932')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150110224204')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150111005553')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:25:26 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (3.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 378ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:6:in `current_user'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___2574160056752745191_70183431933520'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:25:29 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 19ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:6:in `current_user'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___2574160056752745191_70183431933520'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:26:48 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 27ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___2574160056752745191_70183431933520'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:27:22 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 28ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/application_controller.rb:7:in `current_user'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___2574160056752745191_70183431933520'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.0ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (56.0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:35 -0800
+
+
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '10101786999655415' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "profile_image_url", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 21 Jan 2015 16:28:37 UTC +00:00], ["name", "Jeff Meyerson"], ["oauth_expires_at", Wed, 21 Jan 2015 18:00:00 UTC +00:00], ["oauth_token", "CAALlmZAQoBx8BAAGacZBblr3rafwqElqHb2jMGQIZBkZCVfO0Q9zxk13expa242BmV8f2y49gMkeuTcoL4dAIfutkDRYnPCj3aw4V8a4T1bLg0Yviq890a6Yc439ZBZAzwtaCUHzAeAHPcsY9xwCzfkO0X2Nd4CtsUZBeQZCaJg6icSZAckCx568JscQP1lFnDuZBGYvZCaqOgz5rMgKpi40nwBklKz1vpPQYEZD"], ["profile_image_url", "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p50x50/10417560_10101797299504435_5492932724802375248_n.jpg?oh=d50b83cc4fe7bf630b110378e850c75e&oe=555BCC47&__gda__=1432343802_c042c0cc886d16bf1ee0bcf303f1535e"], ["provider", "facebook"], ["uid", "10101786999655415"], ["updated_at", Wed, 21 Jan 2015 16:28:37 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 106ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:37 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (33.2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:38 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.4ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1
+Completed 200 OK in 251ms (Views: 241.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:46 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.7ms)
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:28:47 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:30:11 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 228ms (Views: 225.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.8ms)
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:12 -0800
+
+
+Started POST "/users" for 127.0.0.1 at 2015-01-21 08:30:29 -0800
+Processing by UsersController#create as */*
+  Parameters: {"subjectName"=>"JustinBieber", "valueType"=>"FB_LIKES", "value"=>"77372255,", "price"=>"1", "userId"=>"1"}
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."purchase_price" = 1 AND "investments"."subject" IS NULL AND "investments"."subject_value" = '77372255,' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "investments" ("created_at", "num_shares", "owner_id", "purchase_price", "subject", "subject_value", "updated_at", "value_type") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 21 Jan 2015 16:30:29 UTC +00:00], ["num_shares", 1], ["owner_id", 1], ["purchase_price", 1], ["subject", "JustinBieber"], ["subject_value", "77372255,"], ["updated_at", Wed, 21 Jan 2015 16:30:29 UTC +00:00], ["value_type", "FB_LIKES"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["balance", 99], ["updated_at", Wed, 21 Jan 2015 16:30:29 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 24ms (Views: 0.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.4ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.1ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 144ms (Views: 141.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 08:30:31 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-21 13:03:13 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.3ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 283ms (Views: 280.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-21 13:03:13 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-21 13:03:13 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-21 13:03:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:13 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.5ms)
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-21 13:03:14 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-22 07:22:33 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (29.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (32.5ms)
+  [1m[36mUser Load (14.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 663ms (Views: 615.9ms | ActiveRecord: 45.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (76.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-22 07:22:36 -0800
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2015-01-22 07:22:43 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (88.1ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2015-01-22 07:22:43 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (28.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (60.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-22 07:23:08 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (31.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (32.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'JustinBieber'[0m
+  [1m[35mInvestment Load (0.2ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'cocacola' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'rihanna' ORDER BY "investments"."id" ASC LIMIT 1[0m
+  [1m[35mInvestment Load (0.3ms)[0m  SELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'istanbul' ORDER BY "investments"."id" ASC LIMIT 1
+  [1m[36mInvestment Load (0.2ms)[0m  [1mSELECT "investments".* FROM "investments" WHERE "investments"."owner_id" = 1 AND "investments"."value_type" = 'FB_LIKES' AND "investments"."subject" = 'hearthstone' ORDER BY "investments"."id" ASC LIMIT 1[0m
+Completed 200 OK in 359ms (Views: 325.3ms | ActiveRecord: 32.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/samplechart.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/highcharts/adapters/mootools-adapter.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/highcharts.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+
+Started GET "/app/assets/javascripts/samplechart.js" for 127.0.0.1 at 2015-01-22 07:23:09 -0800
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/javascripts/samplechart.js"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (145.0ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2015-01-22 07:23:10 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2015-01-22 07:23:10 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (42.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-22 07:30:07 -0800
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (19.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 251ms (Views: 230.4ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-22 07:30:10 -0800
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered collection (0.0ms)
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2015-01-22 07:30:11 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (93.3ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2015-01-22 07:30:11 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (26.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (27.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (487.2ms)
+
+
+Started GET "/landingpage/index" for 127.0.0.1 at 2015-01-22 07:30:17 -0800
+
+ActionController::RoutingError (No route matches [GET] "/landingpage/index"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.6ms)
+
+
+Started GET "/landingpage/index" for 127.0.0.1 at 2015-01-22 07:30:18 -0800
+
+ActionController::RoutingError (No route matches [GET] "/landingpage/index"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.1ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for 127.0.0.1 at 2015-01-22 07:30:18 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.1ms)
+
+
+Started GET "/apple-touch-icon.png" for 127.0.0.1 at 2015-01-22 07:30:18 -0800
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.8) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.8) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.8) lib/rails/engine.rb:511:in `call'
+  railties (4.0.8) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/jeffreymeyerson/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/jeffreymeyerson/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.2ms)

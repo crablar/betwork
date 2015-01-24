@@ -22,11 +22,21 @@ class ApplicationController < ActionController::Base
   end
   
   def get_charts
+    puts "CURRENT USER #{current_user}"
+    if current_user == nil
+      puts "RETURNNNN"
+      return []
+    end
     require 'open-uri'
       data_hash = JSON.load(open("https://s3-us-west-2.amazonaws.com/betwork/charts.json"))
       File.open("public/charts.json","w") do |f|
         f.write(data_hash.to_json)
       end
+      data_hash.each do |chart|
+        chart["subjectName"] = chart["chartSubject"]["subjectName"]
+        chart["valueType"] = chart["chartSubject"]["valueType"]
+      end
+      puts data_hash
       data_hash
   end
 
