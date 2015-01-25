@@ -41,7 +41,7 @@ class ApplicationController < ActionController::Base
   end
 
   def get_ownership(subject_name, value_type, current_value)
-    puts current_value
+    puts "IN GET OWNERSHIP"
     investments = Investment.where(
       owner_id: current_user.id,
       value_type: value_type,

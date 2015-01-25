@@ -2,24 +2,17 @@ var arr;
 
 $.getJSON("/charts.json", function(json) {
     arr = json;
-    console.log(arr);
     for (var i = 0; i < arr.length; i++) {
         var chart = arr[i];
         var events = chart["events"];
         var values = [];
         var timestamps = [];
         for(var j = 1; j < events.length; j++){
-            console.log(events[j]);
-            //values.push(events[j]["value"] - events[j - 1]["value"]);
-            values.push(1);
-            timestamps.push(events[j]["timestamp"]);
+            values.push(events[j]["value"]);
+            var date = new Date(events[j]["timestamp"]*1000);
+            timestamps.push(date);
         }
         chart["events"] = events;
-        console.log("YOO");
-        console.log(values);
-        console.log(timestamps);
-        console.log(chart["chartSubject"]["subjectName"]);
-        console.log(chart["chartSubject"]["valueType"]);
         $(function () {
             new Highcharts.Chart({
                 chart: {
