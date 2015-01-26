@@ -1,18 +1,26 @@
 package com.myjmeyerson.app;
 
+import java.util.Date;
+
 import static com.myjmeyerson.app.ChartSubject.ValueType.*;
 
 public class App 
 {
     public static void main( String[] args ) throws Exception {
 
-        ChartSubject[] chartSubjects = initializeChartSubjects();
+        long nextTick = System.currentTimeMillis();
 
-        DataMinerEngine dataMinerEngine = new DataMinerEngine(chartSubjects);
-        dataMinerEngine.updateChartSubjects();
-        ChartEngine chartEngine = new ChartEngine(chartSubjects);
-
-        AWSUploader.upload();
+        while(true) {
+            if (System.currentTimeMillis() > nextTick) {
+                ChartSubject[] chartSubjects = initializeChartSubjects();
+                DataMinerEngine dataMinerEngine = new DataMinerEngine(chartSubjects);
+                dataMinerEngine.updateChartSubjects();
+                ChartEngine.writeCharts(chartSubjects);
+                AWSUploader.upload();
+                nextTick += (1000 * 60 * 60);
+                System.out.println(new Date() + ": uploading chart");
+            }
+        }
 
     }
 

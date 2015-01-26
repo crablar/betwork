@@ -9,9 +9,9 @@ import java.io.File;
  */
 public class ChartEngine {
 
-    private Chart[] charts;
+    private static Chart[] charts;
 
-    public ChartEngine(ChartSubject[] chartSubjects) throws Exception {
+    public static void writeCharts(ChartSubject[] chartSubjects) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         charts = new Chart[chartSubjects.length];
         for(int i = 0; i < chartSubjects.length; i++){
